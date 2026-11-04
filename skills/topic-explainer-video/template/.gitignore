@@ -1,0 +1,6 @@
+node_modules/
+.npm-cache/
+.venv-tts/
+out/*
+!out/poster.png
+public/audio/*.mp3

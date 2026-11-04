@@ -1,0 +1,25 @@
+{
+  "name": "remotion-explainer-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion template for a 30-second narrated Chinese explainer",
+  "scripts": {
+    "start": "remotion studio",
+    "studio": "remotion studio",
+    "render": "remotion render Explainer30 out/explainer.mp4 --concurrency=4",
+    "still": "remotion still Explainer30 out/still.png --frame=210",
+    "tts": "python3 scripts/tts.py",
+    "music": "python3 scripts/music.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "typescript": "5.7.3"
+  }
+}
