@@ -1,6 +1,6 @@
 # my-skills
 
-个人 DeepSeek Harness skill 集合。
+个人常用 skills 集合。
 
 ## Skills
 
