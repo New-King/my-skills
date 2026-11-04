@@ -8,10 +8,7 @@ mkdir -p "$DEST"
 for src in "$ROOT"/skills/*/; do
   name="$(basename "$src")"
   target="$DEST/$name"
-  if [ -e "$target" ] && [ ! -L "$target" ]; then
-    echo "skip $name: $target exists and is not a symlink"
-    continue
-  fi
-  ln -sfn "$src" "$target"
-  echo "linked $name -> $target"
+  mkdir -p "$target"
+  rsync -a --delete "$src/" "$target/"
+  echo "synced $name -> $target"
 done
