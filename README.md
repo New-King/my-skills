@@ -18,17 +18,6 @@ skills/
 
 每个 skill 名使用 kebab-case，必须有 `SKILL.md`，frontmatter 至少包含 `name` 和 `description`。
 
-## 安装 / 同步到 DSH
-
-DSH 会扫描 `~/.dsh/skills`。运行：
-
-```bash
-./install.sh
-```
-
-脚本会把 `skills/*` 同步到 `${DSH_HOME:-$HOME/.dsh}/skills/`。每次在仓库里改了 skill，重新运行一次即可。
-这里用 `rsync` 复制而不是软链接，因为 DSH 对 skill 目录软链接的支持并不稳定。
-
 ## 新增 skill
 
 1. 在 `skills/` 下创建 `<skill-name>/SKILL.md`。
