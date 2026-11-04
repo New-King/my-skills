@@ -5,6 +5,7 @@
 ## Skills
 
 - [topic-explainer-video](skills/topic-explainer-video/SKILL.md) — 给一个主题，直接做成 30 秒中文科普短片（配音、词级字幕、BGM、Remotion 源码）。
+- [github-repo](skills/github-repo/SKILL.md) — 用 curl 调 GitHub API 新建远程仓库（钥匙串取 token，默认 public）。
 
 ## 目录约定
 
